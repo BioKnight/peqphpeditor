@@ -65,9 +65,9 @@ class mysql extends mysqli {
     }
     if ($log_error == 1) {
       logSQL($query . " - Error: " . mysqli_error($this));
-    }
-    else
+    } else {
       die ($query . " - " . mysqli_error($this));
+    }
   }
 
   function generate_insert_query($query) {

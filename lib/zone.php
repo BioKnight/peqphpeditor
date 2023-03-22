@@ -751,7 +751,7 @@ function get_isglobal() {
 }
 
 function update_global() {
-  global $mysql_content_db, $z, $zoneid;
+  global $mysql_content_db, $z, $zoneid, $mysql;
 
   $zid = getZoneID($z);
 
